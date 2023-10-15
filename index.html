@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Engineering Colleges in India</title>
+    <link rel="stylesheet" href="colleges.css">
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+</head>
+<style>
+        * {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.table {
+    width: 90vw;
+    height: 90vh;
+    background-color: #fff5;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+}
+
+.table__header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table__header .input-group {
+    width: 45%;
+    height: 100%;
+    background-color: rgba(3, 196, 250, 0.333);
+    padding: 0 .8rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.table__header .input-group:hover {
+    width: 45%;
+    background-color: rgba(248, 245, 245, 0.927);
+    box-shadow: 0 .1rem .4rem #0002;
+}
+
+.table__header .input-group input {
+    width: 100%;
+    padding: 0 .5rem 0 .3rem;
+    background-color:transparent;
+    border:none;
+    outline:none;
+}
+
+.table__body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+    overflow: overlay;
+}
+
+.table__body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position:static;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+thead th span.icon-arrow {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 1.4px solid transparent;
+    
+    text-align: center;
+    font-size: 1rem;
+    
+    margin-left: .5rem;
+    transition: .2s ease-in-out;
+}
+
+thead th:hover span.icon-arrow{
+    border: 1.4px solid #6c00bd;
+}
+
+thead th:hover {
+    color: #6c00bd;
+}
+
+thead th.active span.icon-arrow{
+    background-color: #6c00bd;
+    color: #fff;
+}
+
+thead th.asc span.icon-arrow{
+    transform: rotate(180deg);
+}
+
+thead th.active,tbody td.active {
+    color: #6c00bd;
+}
+</style>
+<body>
+    <main class="table">
+        <section class="table__header">
+            <h1>Top U.G. Colleges in India</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Colleges...">
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> S.No <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> University Name <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> College Name <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> College Type </th>
+                        <th> Courses offered </th>
+                        <th> State <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> District <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>Aazad College of Education (Id: C-39230)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Prakasam</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>Abhinav Institute of Management &amp; Technology (Id: C-39450)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Prakasam</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>Abhyudaya Mahila Degree College (Id: C-32630)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Guntur</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>A.B.M. College (Id: C-32735)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Prakasam</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>A.B.R College of Education (Id: C-39231)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Prakasam</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>A.C.College (Day) (Id: C-32762)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Guntur</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>A.C.College of Law (Id: C-32792)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Guntur</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>A.C.Evening College (Id: C-32720)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Guntur</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>Acharya N.G.Ranga College of Education (Id: C-32793)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Guntur</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td> Acharya Nagarjuna University, Guntur (Id: U-0003) </td>
+                            <td>Adarsa College of Education (Id: C-32801)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Prakasam</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita Centre for Nanomedical Sciences, Kochi (Id: C-7027) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Kerala</td>
+                            <td>Ernakulam</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita College of Nursing, Kochi (Id: C-7028) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Kerala</td>
+                            <td>Ernakulam</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita School of Arts and Sciences, Amritapuri, Kollam (Id: C-7031) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Kerala</td>
+                            <td>Kollam</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita School of Arts and Sciences, Kochi (Id: C-7030) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Kerala</td>
+                            <td>Ernakulam</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita School of Arts and Sciences, Mysore (Id: C-7035) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA,M.TECH</M></td>
+                            <td>Karnataka</td>
+                            <td>Mysore</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita School of Ayurveda, Amritapuri, Kollam (Id: C-7026) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Kerala</td>
+                            <td>Kollam</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita School of Biotechnology, Amritapuri, Kollam (Id: C-7025) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Kerala</td>
+                            <td>Kollam</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita School of Business, Coimbatore (Id: C-7023) </td>
+                            <td>Constituent / University College</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Tamil Nadu</td>
+                            <td>Coimbatore</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita School of Dentistry, Kochi (Id: C-7019) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Kerala</td>
+                            <td>Ernakulam</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita School of Education, Mysore (Id: C-7032) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Karnataka</td>
+                            <td>Mysore</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td> Amrita Vishwa Vidyapeetham, Coimbatore (Id: U-0436) </td>
+                            <td> Amrita School of Engineering, Amritapuri, Kollam (Id: C-7036) </td>
+                            <td>PG Center / Off-Campus Center</td>
+                            <td>CSE,CSE-ML,CSE-DS,ECE,EEE,MECH,MBA</td>
+                            <td>Kerala</td>
+                            <td>Kollam</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td>ABM Degree College (Id: C-24195)</td>
+                            <td>Affiliated College</td>
+                            <td>BCA,B.Com,BDS,B.Sc,B.Sc IT,B.Arch</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td>Academy of Yoga Consciousness (Id: C-23860)</td>
+                            <td>Affiliated College</td>
+                            <td>Introduction of Human Biology,Outlines of Indian Philosophy & Indian Psychology,Yoga Theory & Application,Classical Yoga Texts,Practical Yoga</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td>ACTS Degree College (Ambedkar College of Tech. &amp; Sci.) (Id: C-24204)</td>
+                            <td>Affiliated College</td>
+                            <td>BCA,B.Com,BDS,B.Sc,B.Sc IT,B.Arch</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td> Aditya Degree College, Gopalapatnam, Visakhapatnam (Id: C-26827) </td>
+                            <td>Affiliated College</td>
+                            <td>BCA,B.Com,BDS,B.Sc,B.Sc IT,B.Arch</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td> Aditya Degree College, Near RTC Complex, Vsp (Id: C-26824) </td>
+                            <td>Affiliated College</td>
+                            <td>BCA,B.Com,BDS,B.Sc,B.Sc IT,B.Arch</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td> Aditya Degree College, Vizianagaram (Id: C-26822) </td>
+                            <td>Affiliated College</td>
+                            <td>BCA,B.Com,BDS,B.Sc,B.Sc IT,B.Arch</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Vizianagaram</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td>A.G.L.Degree College (Id: C-24323)</td>
+                            <td>Affiliated College</td>
+                            <td>BCA,B.Com,BDS,B.Sc,B.Sc IT,B.Arch</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td>Allam Gurumurthy Lakshmibai Memorial College (Id: C-24437)</td>
+                            <td>Affiliated College</td>
+                            <td>B.Com,B.Sc</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Vizianagaram</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td>All Saints Christian Law College (Id: C-23889)</td>
+                            <td>Affiliated College</td>
+                            <td>LL.M.,LL.B.,B.A.LL.B.</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td>All Saints P.G. College (Id: C-24095)</td>
+                            <td>Affiliated College</td>
+                            <td>B.Com,B.Sc,B.A.</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td> Andhra University, Visakhapatnam (Id: U-0006) </td>
+                            <td> A.M.A.L. Degree College, Anakapalle (Id: C-24436) </td>
+                            <td>Affiliated College</td>
+                            <td>BCA,B.Com,BDS,B.Sc,B.Sc IT,B.Arch</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> Al-Ameen Institute of Information Science, Hosur Road, Near Lalbagh Mn. Gate, Bangalore-27 (Id: C-20663) </td>
+                            <td>Affiliated College</td>
+                            <td>M.C.A,B.C.A.</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> Al-Ameen Inst. Of Management Studies, Hosur Road, Bangalore-27 (Id: C-20852) </td>
+                            <td>Affiliated College</td>
+                            <td>M.B.A.</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> Alliance Business Academy, 20th cross, 7th Main Road, 2nd Stage, N.S. Palya, Bangalore-76. (Id: C-21118) </td>
+                            <td>Affiliated College</td>
+                            <td>MBA,BBA,B.Com,Ph.D in Management</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> Alliance School of Management, Chikka agade Cross, Chandapur-Anekal Road, Anekal, Bangalore-562 106. (Id: C-20888) </td>
+                            <td>Affiliated College</td>
+                            <td>M.B.A.</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> Al-Mighty First Grade College, No.23, Opp. Arabic College, Nagavara Main Raod, Bangalore -560 045(2006-07) (Id: C-21173) </td>
+                            <td>Affiliated College</td>
+                            <td>B.Com,B.Sc,BA,BBM,M.A</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> Al-Mighty First Grade Evening College, No.23, Opp. Arabic College, Nagavara Main Raod, Bangalore -560 045(2006-07) (Id: C-21051) </td>
+                            <td>Affiliated College</td>
+                            <td> B.Com, BBA and Accounting & Commerce, Business & Management Studies programs.</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> ALPHA Institute of Management, G-I, The Presidency, No.261, 9-A Mainroad, 1st Floor, Jayanagar 3rd Block, Bangalore-560 011 (Id: C-20814) </td>
+                            <td>Affiliated College</td>
+                            <td> B.Com, BBA and Accounting & Commerce,</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> Ambigara Chowdaia College of Education, No.18/2, Chokkanahalli, Jakkur Post, Hegdenagar, Bangalore -64 (Id: C-20997) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> A.M.C College, 18th Km. Bannerghatta Road, Bangalore-83 (Id: C-20960) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> Amitha B.Ed. College, C.A. No.2, 3rd Main, West of Chord Road, 2nd Stage, Mahalkshmipura, Bangalore -560 086 (Id: C-20938) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td> Bangalore University, Bangalore (Id: U-0215) </td>
+                            <td> Amith Frist Grade Evening College, CA No.2, 2nd Stage, 3rd Main, West of Chord Road, Mahalakshmipuram, Bangalore -86 (Id: C-20607) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Karnataka</td>
+                            <td>Bangalore</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td>SHRI BALAJI MAHARAJ MAHAVIDYALAYA NAGLA SHARU SASNI MAHAMAYA NAGAR (Id: C-15118)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Hatras</td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td> SHRI BANSHI DHAR MEMORIAL MAHAVIDYALAYA TUNDLA, FIROZABAD (Id: C-15115) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Firozabad</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td> SHRI BHAGWAN SHIV MAHAVIDYALAYA,UMMEDPUR ETAH (Id: C-15117) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Etah</td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td> SHRI BHOOP SINGH SMRITI MAHILA MAHAVIDYALAYA BHOOP NAGAR ,MAINPURI (Id: C-15080) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Mainpuri</td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td> SHRI BRAJ RAJ SINGH MAHAVIDYALAYA YASODA NAGAR, G.T. ROAD, ETAH (Id: C-15219) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Etah</td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td> SHRI CHANDRA BHAN SINGH DEGREE COLLEGE, AGRA (Id: C-15095) </td>
+                            <td>Affiliated College</td>
+                            <td>BCA,B.Com,BDS,B.Sc,B.Sc IT,B.Arch</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Agra</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td>SHRI CHHITAR MAL MAHAVIDYALAYA BRATHALA SAIYAN AGRA (Id: C-15458)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Agra</td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td> SHRI CHITRAGUPT(P.G) COLLEGE,MAINPURI (Id: C-15457) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Mainpuri</td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td> SHRI DAUJI MAHARAJ DEGREE COLLEGE, SAMSHABAD ROAD, AGRA (Id: C-47637) </td>
+                            <td>Affiliated College</td>
+                            <td>BCA,B.Com,BDS,B.Sc,B.Sc IT,B.Arch</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Agra</td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td> SHRI FAIAZ HUSSAIN (P.G) COLLEGE,NIDHAULI KALAN,ETAH (Id: C-15385) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Etah</td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td> Dr. B. R. Ambedkar University, Agra (Id: U-0509) </td>
+                            <td> SHRI GANGA SAHAY KANYA MAHAVIDYALAYA, MAINPURI (Id: C-15562) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Uttar Pradesh</td>
+                            <td>Mainpuri</td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Aditya Engineering College, Aditya Nagar, ADB Raod, Surampalem, PIN-533437(CC-A9) (Id: C-17952) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>East Godavari</td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> ADITYA INSTITUTE OF TECHNOLOGY &amp; MANAGEMENT, K.Kothuru, Tekkali - 532201, Srikakulam District, A.P(CC-A5) (Id: C-18122) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Srikakulam</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> AITAM School of Computer Science &amp; Management, K.Kothuru, Tekkali- 532201, (CC-PM) (Id: C-17996) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Srikakulam</td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> A.K.R.G. College of Engineering and Technology, Nallajerla-534112, (CC-HK) (Id: C-18031) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>West Godavari</td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> AKRG College of Pharmacy, Nallagerla PIN-534112(CC-8N) (Id: C-18087) </td>
+                            <td>Affiliated College</td>
+                            <td>B.Pharma.,M.Pharm.,M.Pharma.,Pharm.D.,Pharm.D (PB),Pharmacy</td>
+                            <td>Andhra Pradesh</td>
+                            <td>West Godavari</td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Akula Gopayya College of Engineering &amp; Technology, Nh-5, Y-Junction, Prathiapadu, Tadepalligudem, PIN -534146 (CC-G5) (Id: C-18127) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>West Godavari</td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Akula Manikyam College of Engineering &amp; Technology, (CC-7F) (Id: C-18140) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>West Godavari</td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Akula Sree Ramulu College of Engineering, Beside NH-5, By pass Road, Tetali, Tanuku, PIN -534211(CC-53) (Id: C-18091) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>West Godavari</td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Al-aman College of Engineering, Gudilova (Village), Anandapuram (Mandal) Pin-531173 (CC-GJ) (Id: C-18073) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Al-Ameer College of Engineering &amp; Information Technology, Gudilova(Vil), Anandapuram(M), PIN-531173 (CC-B1) (Id: C-18119) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Al-Ameer College of Pharmacy, Gudilova, Anandapuram(M),PIN-531173(CC-PF) (Id: C-17919) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>66</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Amalapuram Institute of Management Sciences &amp; College of Engineering, NH-214 Road, Mummidivaram,PIN-533216 (CC-6L) (Id: C-18096) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>East Godavari</td>
+                        </tr>
+                        <tr>
+                            <td>67</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Amara Institute of Engineering &amp; Technology, Satuluru Post, Nadendla (Mandal), PIN-522601(CC-AH) (Id: C-18136) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Guntur</td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> A.M. Reddy Memorial College of Engineering and Technology, Vinukonda Road, Narasaraopet(Mandal), PIN-522601(CC-HM) (Id: C-18114) </td>
+                            <td>Affiliated College</td>
+                            <td>B.Pharma.,M.Pharm.,M.Pharma.,Pharm.D.,Pharm.D (PB),Pharmacy</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Guntur</td>
+                        </tr>
+                        <tr>
+                            <td>69</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Amrita Sai Institute of Science &amp; Technology, Amrita Sai Nagar, Paritala (PO), Kanchikacherla (MD), PIN-521180 (CC-AJ) (Id: C-17907) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Krishna</td>
+                        </tr>
+                        <tr>
+                            <td>70</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Andhra Loyola Institute of Engineering &amp; Technology, Polytechnic Post Office, Loyola Campus,Vijayawada, PIN-520008. (CC-HP) (Id: C-17899) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Krishna</td>
+                        </tr>
+                        <tr>
+                            <td>71</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> A.S.N. Women&#39;s Engineering College, Kamala Educational Society, Burripalem Road, Tenali-522201(CC-JT) (Id: C-17970) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Guntur</td>
+                        </tr>
+                        <tr>
+                            <td>72</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> A S R College of Engineering &amp; Technology, PIN-533003 (CC-6Y) (Id: C-18109) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>East Godavari</td>
+                        </tr>
+                        <tr>
+                            <td>73</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Avanthi Institute of Engineering Technology, Chirukupally(V), Bhogapuram(M), Near Tagarapuvalasa Bridge, PIN- 531 162 (CC-Q7) (Id: C-17993) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH,Pharmc,Pharmd</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Vizianagaram</td>
+                        </tr>
+                        <tr>
+                            <td>74</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Avanthi Institute of Engineering &amp; Technology, Tamaram Village, Makavarapalem mandal, Narsipatnam , Pin-531113. (CC-81) (Id: C-18157) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>75</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Avanthi Institute of Pharmaceutical Sciences, Bhogapuram(M), PIN-531162 (CC-T5) (Id: C-18016) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Vizianagaram</td>
+                        </tr>
+                        <tr>
+                            <td>76</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Avanthi&#39;s Research &amp; Technological Academy, Basavapalem (V), Bhogapuram(M), PIN-500034 (CC-HQ) (Id: C-17988) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Vizianagaram</td>
+                        </tr>
+                        <tr>
+                            <td>77</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> AVANTHI&#39;S ST.THERESSA INSTITUTE OF ENGINEERING &amp; TECHNOLOGY, Garbham Road, Garividi Village, Garividi Mandal, PIN -535101 (CC 99) (Id: C-17940) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Vizianagaram</td>
+                        </tr>
+                        <tr>
+                            <td>78</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> BABA Institute of Technology &amp; Science, P.M. Palem, Bakkannapalem Village, Madhurawada, PIN-530048 (CC-NR) (Id: C-18006) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>Visakhapatnam</td>
+                        </tr>
+                        <tr>
+                            <td>79</td>
+                            <td> Jawaharlal Nehru Technological University, Kakinada (Id: U-0015) </td>
+                            <td> Badari Institute of Technology &amp; Science For Women, Sarpavaram, Kakinada-533005 (CC-6U) (Id: C-18153) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Andhra Pradesh</td>
+                            <td>East Godavari</td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sree Kavita Institute of Science Technology (Id: C-19557)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Khammam</td>
+                        </tr>
+                        <tr>
+                            <td>81</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sree Kavitha College of Management and Information Technology (Id: C-19719)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Khammam</td>
+                        </tr>
+                        <tr>
+                            <td>82</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sree Nagarjuna College of Pharmacy (Id: C-19544)</td>
+                            <td>Affiliated College</td>
+                            <td>B.Pharma.,M.Pharm.,M.Pharma.,Pharm.D.,Pharm.D (PB),Pharmacy</td>
+                            <td>Telangana</td>
+                            <td>Warangal</td>
+                        </tr>
+                        <tr>
+                            <td>83</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sreenidi Institute of Science &amp;Technology (Id: C-19951)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Rangareddy</td>
+                        </tr>
+                        <tr>
+                            <td>84</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sree Rama Institute of Science &amp; Technology (Id: C-19851)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Khammam</td>
+                        </tr>
+                        <tr>
+                            <td>85</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sree Vaanmayi Institute of Engineering &amp; Technology (Id: C-19931)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Nalgonda</td>
+                        </tr>
+                        <tr>
+                            <td>86</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>S.R Engineering College (Id: C-19754)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Warangal</td>
+                        </tr>
+                        <tr>
+                            <td>87</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td> SREYAS INSTITUTE OF ENGINEERING &amp; TECHNOLOGY, TATTIANNNARAM (Id: C-44949) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Hyderabad</td>
+                        </tr>
+                        <tr>
+                            <td>88</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td> Sri Caitanya College of Engg&amp; Tech,and Sri Chaitanya College of Business Management (Id: C-19746) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Rangareddy</td>
+                        </tr>
+                        <tr>
+                            <td>89</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sri Chaitanya Institute of Management and Computer Sciences (Id: C-19732)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Karimnagar</td>
+                        </tr>
+                        <tr>
+                            <td>90</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sridevi Women&#39;s Engineering College (Id: C-19689)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Hyderabad</td>
+                        </tr>
+                        <tr>
+                            <td>91</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sri Hindu College of Engineering &amp; Technology (Id: C-19647)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Rangareddy</td>
+                        </tr>
+                        <tr>
+                            <td>92</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sri Indu Institute of Pharmacy (Id: C-19519)</td>
+                            <td>Affiliated College</td>
+                            <td>B.Pharma.,M.Pharm.,M.Pharma.,Pharm.D.,Pharm.D (PB),Pharmacy</td>
+                            <td>Telangana</td>
+                            <td>Rangareddy</td>
+                        </tr>
+                        <tr>
+                            <td>93</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sri Kavita Engineering College (Id: C-19640)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Khammam</td>
+                        </tr>
+                        <tr>
+                            <td>94</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sri Kottam Tulasi Reddy Memorial College of Engineering (Id: C-19690)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE,IT,MBA,M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Mahbubnagar</td>
+                        </tr>
+                        <tr>
+                            <td>95</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sri K.S Raju Institute of Technology &amp; Sciences (Id: C-19526)</td>
+                            <td>Affiliated College</td>
+                            <td>BE,CE,MBA,ME M.TECH</td>
+                            <td>Telangana</td>
+                            <td>Rangareddy</td>
+                        </tr>
+                        <tr>
+                            <td>96</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sri Nagoji Rao Institute of Technology For Women (Id: C-19860)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE</td>
+                            <td>Telangana</td>
+                            <td>Mahbubnagar</td>
+                        </tr>
+                        <tr>
+                            <td>97</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Srinivasa Pharmaceutical Institute and Centre for Research (Id: C-19805)</td>
+                            <td>Affiliated College</td>
+                            <td>B.Pharma.,M.Pharm.,M.Pharma.,Pharm.D.,Pharm.D (PB),Pharmacy.,Degree.,Drug Research.</td>
+                            <td>Telangana</td>
+                            <td>Rangareddy</td>
+                        </tr>
+                        <tr>
+                            <td>98</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Srinivas Reddy Institute of Technology (Id: C-35917)</td>
+                            <td>Affiliated College</td>
+                            <td>BE,CE,ECE ENTC,MECH</td>
+                            <td>Telangana</td>
+                            <td>Nizamabad</td>
+                        </tr>
+                        <tr>
+                            <td>99</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td> S R INTERNATIONAL INSTITUTE OF TECHNOLOGY, RAMPALLY (Id: C-44970) </td>
+                            <td>Affiliated College</td>
+                            <td>CSE,IT,ECE</td>
+                            <td>Telangana</td>
+                            <td>Rangareddy</td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td> Jawaharlal Nehru Technological University, Hyderabad (Id: U-0017) </td>
+                            <td>Sri Sai Educational Society&#39;s Group of Institutions (Id: C-19937)</td>
+                            <td>Affiliated College</td>
+                            <td>CSE,ECE,MECH,EEE</td>
+                            <td>Telangana</td>
+                            <td>Nalgonda</td>
+                        </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+<script>
+    const search = document.querySelector('.input-group input'),
+    table_rows = document.querySelectorAll('tbody tr'),
+    table_headings = document.querySelectorAll('thead th');
+
+// 1. Searching for specific data of HTML table
+search.addEventListener('input', searchTable);
+
+function searchTable() {
+    table_rows.forEach((row, i) => {
+        let table_data = row.textContent.toLowerCase(),
+            search_data = search.value.toLowerCase();
+
+        row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
+        row.style.setProperty('--delay', i / 25 + 's');
+    })
+
+    document.querySelectorAll('tbody tr:not(.hide)').forEach((visible_row, i) => {
+        visible_row.style.backgroundColor = (i % 2 == 0) ? 'transparent' : '#0000000b';
+    });
+}
+
+// 2. Sorting | Ordering data of HTML table
+
+table_headings.forEach((head, i) => {
+    let sort_asc = true;
+    head.onclick = () => {
+        table_headings.forEach(head => head.classList.remove('active'));
+        head.classList.add('active');
+
+        document.querySelectorAll('td').forEach(td => td.classList.remove('active'));
+        table_rows.forEach(row => {
+            row.querySelectorAll('td')[i].classList.add('active');
+        })
+
+        head.classList.toggle('asc', sort_asc);
+        sort_asc = head.classList.contains('asc') ? false : true;
+
+        sortTable(i, sort_asc);
+    }
+})
+function sortTable(column, sort_asc) {
+    [...table_rows].sort((a, b) => {
+        let first_row = a.querySelectorAll('td')[column].textContent.toLowerCase(),
+            second_row = b.querySelectorAll('td')[column].textContent.toLowerCase();
+
+        return sort_asc ? (first_row < second_row ? 1 : -1) : (first_row < second_row ? -1 : 1);
+    })
+        .map(sorted_row => document.querySelector('tbody').appendChild(sorted_row));
+}
+</script>
+</html>
